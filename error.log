@@ -1,0 +1,113 @@
+0 verbose cli [
+0 verbose cli   '/home/changjoopark/.nvm/versions/node/v15.8.0/bin/node',
+0 verbose cli   '/home/changjoopark/.nvm/versions/node/v15.8.0/bin/npm',
+0 verbose cli   'i',
+0 verbose cli   'nuxt-use-motion'
+0 verbose cli ]
+1 info using npm@7.5.4
+2 info using node@v15.8.0
+3 timing config:load:defaults Completed in 1ms
+4 timing config:load:file:/home/changjoopark/.nvm/versions/node/v15.8.0/lib/node_modules/npm/npmrc Completed in 0ms
+5 timing config:load:builtin Completed in 0ms
+6 timing config:load:cli Completed in 1ms
+7 timing config:load:env Completed in 0ms
+8 timing config:load:file:/home/changjoopark/sample_app/.npmrc Completed in 0ms
+9 timing config:load:project Completed in 0ms
+10 timing config:load:file:/home/changjoopark/.npmrc Completed in 1ms
+11 timing config:load:user Completed in 1ms
+12 timing config:load:file:/home/changjoopark/.nvm/versions/node/v15.8.0/etc/npmrc Completed in 0ms
+13 timing config:load:global Completed in 0ms
+14 timing config:load:cafile Completed in 0ms
+15 timing config:load:validate Completed in 0ms
+16 timing config:load:setUserAgent Completed in 0ms
+17 timing config:load:setEnvs Completed in 1ms
+18 timing config:load Completed in 4ms
+19 verbose npm-session fdc4039743995ac5
+20 timing npm:load Completed in 8ms
+21 timing arborist:ctor Completed in 0ms
+22 timing idealTree:init Completed in 319ms
+23 timing idealTree:userRequests Completed in 1ms
+24 silly idealTree buildDeps
+25 silly fetch manifest nuxt-use-motion@*
+26 timing arborist:ctor Completed in 0ms
+27 http fetch GET 200 https://registry.npmjs.org/nuxt-use-motion 1041ms
+28 silly placeDep ROOT nuxt-use-motion@1.0.5 OK for: sample_app@1.0.0 want: *
+29 silly fetch manifest @vueuse/motion@^1.0.5
+30 silly fetch manifest defu@^2.0.4
+31 silly fetch manifest vue-demi@^0.6.0
+32 http fetch GET 200 https://registry.npmjs.org/vue-demi 41ms
+33 http fetch GET 304 https://registry.npmjs.org/defu 43ms (from cache)
+34 http fetch GET 200 https://registry.npmjs.org/@vueuse%2fmotion 1841ms
+35 timing idealTree:#root Completed in 2890ms
+36 silly fetch manifest @vue/composition-api@>=1.x
+37 http fetch GET 304 https://registry.npmjs.org/@vue%2fcomposition-api 44ms (from cache)
+38 silly fetch manifest vue@>=2.x || >=3.x
+39 http fetch GET 304 https://registry.npmjs.org/vue 25ms (from cache)
+40 silly fetch manifest vue@^2.6.0 || >=3.0.0-rc.1
+41 silly placeDep node_modules/nuxt-use-motion @vueuse/motion@1.0.5 OK for: nuxt-use-motion@1.0.5 want: ^1.0.5
+42 silly placeDep node_modules/nuxt-use-motion @vue/composition-api@ OK for: @vueuse/motion@1.0.5 want: >=1.x
+43 warn ERESOLVE overriding peer dependency
+44 warn Found: [1m@vue/composition-api[22m@[1mundefined[22m[2m[22m
+44 warn [2mnode_modules/nuxt-use-motion/node_modules/@vue/composition-api[22m
+44 warn
+44 warn Could not resolve dependency:
+44 warn [35mpeer[39m [1m@vue/composition-api[22m@"[1m>=1.x[22m" from [1m@vueuse/motion[22m@[1m1.0.5[22m[2m[22m
+44 warn [2mnode_modules/nuxt-use-motion/node_modules/@vueuse/motion[22m
+44 warn   [1m@vueuse/motion[22m@"[1m^1.0.5[22m" from [1mnuxt-use-motion[22m@[1m1.0.5[22m[2m[22m
+44 warn   [2mnode_modules/nuxt-use-motion[22m
+45 silly placeDep node_modules/nuxt-use-motion defu@2.0.4 OK for: nuxt-use-motion@1.0.5 want: ^2.0.4
+46 silly placeDep ROOT vue-demi@0.6.0 OK for: nuxt-use-motion@1.0.5 want: ^0.6.0
+47 silly fetch manifest @vueuse/core@^4.2.1
+48 silly fetch manifest popmotion@^9.2.1
+49 http fetch GET 200 https://registry.npmjs.org/popmotion 31ms
+50 http fetch GET 200 https://registry.npmjs.org/@vueuse%2fcore 2055ms
+51 timing idealTree:node_modules/nuxt-use-motion Completed in 2138ms
+52 timing idealTree:node_modules/vue-demi Completed in 0ms
+53 timing idealTree:node_modules/nuxt-use-motion/node_modules/@vue/composition-api Completed in 0ms
+54 silly placeDep ROOT @vueuse/core@4.2.2 OK for: @vueuse/motion@1.0.5 want: ^4.2.1
+55 silly placeDep ROOT popmotion@9.2.1 OK for: @vueuse/motion@1.0.5 want: ^9.2.1
+56 silly fetch manifest @vueuse/shared@4.2.2
+57 silly fetch manifest framesync@5.1.0
+58 silly fetch manifest hey-listen@^1.0.8
+59 silly fetch manifest style-value-types@4.0.3
+60 http fetch GET 200 https://registry.npmjs.org/framesync 23ms
+61 http fetch GET 200 https://registry.npmjs.org/hey-listen 32ms
+62 http fetch GET 200 https://registry.npmjs.org/style-value-types 31ms
+63 http fetch GET 200 https://registry.npmjs.org/@vueuse%2fshared 1715ms
+64 timing idealTree:node_modules/nuxt-use-motion/node_modules/@vueuse/motion Completed in 1720ms
+65 silly placeDep ROOT @vueuse/shared@4.2.2 OK for: @vueuse/core@4.2.2 want: 4.2.2
+66 timing idealTree:node_modules/@vueuse/core Completed in 1ms
+67 timing idealTree:node_modules/@vueuse/shared Completed in 0ms
+68 silly placeDep ROOT framesync@5.1.0 OK for: popmotion@9.2.1 want: 5.1.0
+69 silly placeDep ROOT hey-listen@1.0.8 OK for: popmotion@9.2.1 want: ^1.0.8
+70 silly placeDep ROOT style-value-types@4.0.3 OK for: popmotion@9.2.1 want: 4.0.3
+71 timing idealTree:node_modules/popmotion Completed in 5ms
+72 timing idealTree:node_modules/framesync Completed in 0ms
+73 timing idealTree:node_modules/hey-listen Completed in 0ms
+74 timing idealTree:node_modules/style-value-types Completed in 0ms
+75 timing idealTree:node_modules/nuxt-use-motion/node_modules/defu Completed in 0ms
+76 timing idealTree:buildDeps Completed in 6756ms
+77 timing idealTree:fixDepFlags Completed in 15ms
+78 timing idealTree Completed in 7092ms
+79 timing command:install Completed in 7096ms
+80 verbose type range
+81 verbose stack @vue/composition-api: No matching version found for @vue/composition-api@>=1.x.
+81 verbose stack     at module.exports (/home/changjoopark/.nvm/versions/node/v15.8.0/lib/node_modules/npm/node_modules/npm-pick-manifest/index.js:207:23)
+81 verbose stack     at /home/changjoopark/.nvm/versions/node/v15.8.0/lib/node_modules/npm/node_modules/pacote/lib/registry.js:117:26
+81 verbose stack     at async Arborist.[nodeFromEdge] (/home/changjoopark/.nvm/versions/node/v15.8.0/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:886:19)
+81 verbose stack     at async Arborist.[loadPeerSet] (/home/changjoopark/.nvm/versions/node/v15.8.0/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:1092:11)
+81 verbose stack     at async Arborist.[buildDepStep] (/home/changjoopark/.nvm/versions/node/v15.8.0/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:834:11)
+81 verbose stack     at async Arborist.buildIdealTree (/home/changjoopark/.nvm/versions/node/v15.8.0/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:209:7)
+81 verbose stack     at async Promise.all (index 1)
+81 verbose stack     at async Arborist.reify (/home/changjoopark/.nvm/versions/node/v15.8.0/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/reify.js:127:5)
+81 verbose stack     at async install (/home/changjoopark/.nvm/versions/node/v15.8.0/lib/node_modules/npm/lib/install.js:38:3)
+82 verbose cwd /home/changjoopark/sample_app
+83 verbose Linux 5.4.72-microsoft-standard-WSL2
+84 verbose argv "/home/changjoopark/.nvm/versions/node/v15.8.0/bin/node" "/home/changjoopark/.nvm/versions/node/v15.8.0/bin/npm" "i" "nuxt-use-motion"
+85 verbose node v15.8.0
+86 verbose npm  v7.5.4
+87 error code ETARGET
+88 error notarget No matching version found for @vue/composition-api@>=1.x.
+89 error notarget In most cases you or one of your dependencies are requesting
+89 error notarget a package version that doesn't exist.
+90 verbose exit 1
