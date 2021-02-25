@@ -28,6 +28,7 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
+    'nuxt-use-motion'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -36,5 +37,22 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+  },
+  // from https://github.com/Tahul/nuxt-use-motion#setup
+  motion: {
+    directives: {
+      'pop-bottom': {
+        initial: {
+          scale: 0,
+          opacity: 0,
+          y: 100
+        },
+        visible: {
+          scale: 1,
+          opacity: 1,
+          y: 0
+        },
+      }
+    }
   }
 }

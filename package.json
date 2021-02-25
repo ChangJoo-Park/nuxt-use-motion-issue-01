@@ -12,5 +12,8 @@
     "@nuxtjs/composition-api": "^0.20.2",
     "core-js": "^3.8.3",
     "nuxt": "^2.14.12"
+  },
+  "devDependencies": {
+    "nuxt-use-motion": "git+https://github.com/Tahul/nuxt-use-motion.git"
   }
 }

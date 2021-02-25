@@ -1,7 +1,8 @@
 <template>
   <div class="container">
     <div>
-      <Logo />
+      <Logo v-motion-pop-bottom />
+      <div v-motion-pop-bottom>Pop from bottom! 🎺</div>
       <h1 class="title">
         sample_app
       </h1>
