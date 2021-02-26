@@ -1,11 +1,16 @@
 <template>
   <div class="container">
     <div>
-      <Logo v-motion-pop-bottom />
+      <Logo
+        v-motion
+        :initial="{ opacity: 0, y: 100 }"
+        :enter="{ opacity: 1, y: 0, scale: 1 }"
+        :variants="{ custom: { scale: 2 } }"
+        :hovered="{ scale: 1.2 }"
+        :delay="200"
+      />
       <div v-motion-pop-bottom>Pop from bottom! 🎺</div>
-      <h1 class="title">
-        sample_app
-      </h1>
+      <h1 class="title">sample_app</h1>
       <div class="links">
         <a
           href="https://nuxtjs.org/"
@@ -29,7 +34,7 @@
 </template>
 
 <script>
-export default {}
+export default {};
 </script>
 
 <style>
@@ -43,16 +48,8 @@ export default {}
 }
 
 .title {
-  font-family:
-    'Quicksand',
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
+  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   display: block;
   font-weight: 300;
   font-size: 100px;
